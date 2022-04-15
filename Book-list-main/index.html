@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Our BookList</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- starting of header section -->
+
+        <section class="header">
+            <div class="logo">
+                <h1>My<span class="theme-color">Library
+                    </span></h1>
+            </div>
+
+        </section>
+        <!-- end of header section -->
+
+        <!-- starting of input section -->
+
+        <section class="input">
+
+            <div class="lebel">
+                Book Name:
+            </div>
+            <div class="input-text">
+                <input class="inpt-text" type="text" id="book-name" placeholder="Enter Book name">
+            </div>
+
+
+            <div class="lebel">
+                Author Name:
+            </div>
+            <div class="input-text">
+                <input class="inpt-text" type="text" id="author-name" placeholder="Enter Author name">
+            </div>
+
+            <div class="lebel">
+                Year:
+            </div>
+            <div class="input-text">
+                <input class="inpt-text" type="text" id="year" placeholder="Enter Published Year">
+            </div>
+            <button class="main-button">Add Book</button>
+        </section>
+
+        <section class="table">
+            <table id="book-table">
+                <tr>
+                <th>BookName</th>
+                <th>AuthorName</th>
+                <th>Year</th>
+                <th></th>
+            </tr>
+            <tbody id="book-list"></tbody>
+            </table>
+        </section>
+
+
+
+    </div>
+
+    <script src="/src/js/script.js"></script>
+</body>
+
+</html>

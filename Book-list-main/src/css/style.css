@@ -1,0 +1,144 @@
+/* Resetting Basic Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+:root {
+  --family: 'Rubik', sans-serif;
+  --secondary: #425466;
+  --primary: #6c83ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f6f9fc;
+  text-align: center;
+  margin: 0 auto;
+  font-family: var(--family);
+  color: var(--secondary);
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.theme-color {
+  color: var(--primary);
+}
+.alert {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.header .logo {
+  padding: 12px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.header .logo h1 {
+  font-size: 48px;
+}
+.input {
+  width: 400px;
+  margin: 30px auto;
+}
+.input .lebel {
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.input .inpt-text {
+  width: 100%;
+  background-color: #fff;
+  color: #425466;
+  border: 2px solid var(--secondary);
+  padding: 8px;
+  transition: 1s;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  outline: none;
+}
+
+.input .inpt-text:focus {
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.input .main-button {
+  background-color: var(--secondary);
+  padding: 8px;
+  /* margin: 18px; */
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  margin: 18px auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.table {
+  width: 400px;
+  margin-top: 30px;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.table table {
+  width: 100%;
+  text-align: left;
+  /* position: relative; */
+  border-collapse: collapse;
+  background-color: #fff;
+}
+.table table tr {
+  width: 100%;
+  /* border-bottom: 1px solid var(--secondary); */
+}
+.table table th {
+  background-color: var(--primary);
+  color: #fff;
+}
+.table table th,
+td {
+  /* text-align: center; */
+  padding: 8px;
+}
+.table table tr:nth-child(odd) {
+  background-color: #d3d3d3;
+  color: #000 !important;
+}
+
+.table table tr:first-child() {
+  background-color: var(--primary) !important;
+}
+.close {
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  border: none;
+  color: var(--primary);
+}
+.close:hover {
+  color: red;
+}
+.main-button:hover {
+  color: #6c83ff;
+}
